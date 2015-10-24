@@ -14,14 +14,11 @@
 		<script type="text/javascript" src="js/Vegur_300.font.js"></script>
 		<script type="text/javascript" src="js/PT_Sans_700.font.js"></script>
 		<script type="text/javascript" src="js/PT_Sans_400.font.js"></script>
-		<script type="text/javascript" src="js/tms-0.3.js"></script>
-		<script type="text/javascript" src="js/tms_presets.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/atooltip.jquery.js"></script>
 		<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 		<!--[if lt IE 9]>
-		<script type="text/javascript" src="js/html5.js"></script>
-		<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+			<script type="text/javascript" src="js/html5.js"></script>
+			<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
 		<![endif]-->
 		<!--[if lt IE 7]>
 			<div style=' clear: both; text-align:center; position: relative;'>
@@ -29,7 +26,7 @@
 			</div>
 		<![endif]-->
 	</head>
-	<body id="page1">
+	<body id="page2">
 		<div class="main zerogrid">
 <!--header -->
 			<header>
@@ -39,37 +36,81 @@
 							<div class="bg"><input class="input" type="text" value="Search"  onblur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''" ></div>
 						</fieldset>
 					</form>
-					<h1><a href="index.html" id="logo"><img src="images/logo.png" width="240" high="44"/></a></h1>
+					<h1><a href="index.html" id="logo"><img src="images/logo.png" width="240" high="44" /></a></h1>
 				</div>
 				<nav>
 					<ul id="menu">
-						<li class="active"><a href="index.html"><span>Homepage</span></a></li>
-						<li><a href="leg.html"><span>Leg Extension</span></a></li>
-						<li><a href="ab.html"><span>Abductor</span></a></li>
+						<li><a href="index.html"><span>Homepage</span></a></li>
+						<li   class="active"><a href="leg.html"><span>Leg Extension</span></a></li>
+						<li ><a href="ab.html"><span>Abductor</span></a></li>
 						<li><a href="multi.html"><span>Multi-Hip</span></a></li>
 					</ul>
 				</nav>
-				 
+				<div id="slider">
+					<ul class="items">
+						<li>
+							<img src="images/img1.jpg" alt="">
+							<div class="banner">
+								<span class="title"><span class="color2">We Have</span><span class="color1">Propositions</span><span>For Everybody</span></span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+								<a href="#" class="button1">Read More</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/img2.jpg" alt="">
+							<div class="banner">
+								<span class="title"><span class="color2">Fresh Ideas</span><span class="color1">For Growing</span><span>Your Business</span></span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+								<a href="#" class="button1">Read More</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/img3.jpg" alt="">
+							<div class="banner">
+								<span class="title"><span class="color2">The Best</span><span class="color1">You Can Find</span><span>On The Web</span></span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+								<a href="#" class="button1">Read More</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</header>
+<!--header end-->
+<!--content -->
+			<article id="content">
+				<div class="wrapper">
+					<div class="col-2-3"><div class="wrap-col">
+						<h2>What is Leg Extension</h2>
+						<div class="wrapper">
+							<figure class="left marg_right1"><img src="images/Leg Extension.jpg" alt=""></figure>
+							<p class="color2 pad_bot1">The leg extension is a resistance weight training exercise that targets the quadriceps muscle in the legs.</p>
+							<p>The exercise is done using a machine called the Leg Extension Machine. There are various manufacturers of these machines and each one is slightly different. Most gym and weight rooms will have the machine in their facility.</p>
+						</div>
+						<p> The leg extension is an isolated exercise targeting one specific muscle group, the quadriceps. It should not be considered as a total leg workout, such as the squat or deadlift.</p>
+						<a href="#" class="button1">Read More</a>
+					</div></div>
+					
+				</div>
+			</article>
+		</div>
+	<style>
+	
+
+
+<!--footer -->
+			<footer>
+				<ul id="icons">
+					<li class="first">Follow Us:</li>
+					<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.jpg" alt=""></a></li>
+					<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon2.jpg" alt=""></a></li>
+					<li><a href="#" class="normaltip" title="Picasa"><img src="images/icon3.jpg" alt=""></a></li>
+					<li><a href="#" class="normaltip" title="YouTube"><img src="images/icon4.jpg" alt=""></a></li>
+				</ul>
+				<br><a href="http://www.zerotheme.com" target="_blank" rel="nofollow">Free Html5 Templates</a> by <a href="http://www.templatemonster.com" target="_blank" rel="nofollow">TemplateMonster</a> | <a href="http://www.zerotheme.com" target="_blank" rel="nofollow">Zerotheme</a><br>
+				<!-- {%FOOTER_LINK} -->
+			</footer>
+<!--footer end-->
 		</div>
 		<script type="text/javascript"> Cufon.now(); </script>
-		<script>
-			$(window).load(function(){
-				$('#slider')._TMS({
-					banners:true,
-					waitBannerAnimation:false,
-					preset:'diagonalFade',
-					easing:'easeOutQuad',
-					pagination:true,
-					duration:400,
-					slideshow:8000,
-					bannerShow:function(banner){
-						banner.css({marginRight:-500}).stop().animate({marginRight:0}, 600)
-					},
-					bannerHide:function(banner){
-						banner.stop().animate({marginRight:-500}, 600)
-					}
-					})
-			})
-		</script>
 	</body>
 </html>
